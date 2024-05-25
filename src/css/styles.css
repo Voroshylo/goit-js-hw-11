@@ -4,9 +4,26 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+/* @import url('./reset.css'); */
 
-.loader {
+input {
+  Width: 272px;
+height: 40px;
+border-radius: 4px;
+border-color: #808080;
+outline: none;
+}
+
+input:hover, input:focus {
+  border-color: #000000
+;
+}
+input:not(:placeholder-shown) {
+  border-color: #4E75FF
+;
+}
+
+/* .loader {
     display: none;
     border: 16px solid #f3f3f3;
     border-top: 16px solid #3498db;
@@ -18,10 +35,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .loader.hidden {
     display: none;
+
+}
+
+.btn-search {
+  background-color: #4E75FF;
+      Width: 91px;
+Height: 40px;
+border-radius: 8px;
+Padding: 8px, 16px, 8px, 16px;
+Gap: 10px;
+border: none;
+color: #f3f3f3;
+}
+.btn-search:hover, .btn-search:focus{
+  background-color: #6C8CFF;
 }
 
 @keyframes spin {
