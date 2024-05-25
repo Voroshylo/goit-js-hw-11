@@ -41,5 +41,5 @@ export function showLoader() {
 }
 
 export function hideLoader() {
-  document.querySelector('loader').classList.add('hidden');
+  document.querySelector('.loader').classList.add('hidden');
 }

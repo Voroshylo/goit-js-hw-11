@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_PIXABAY_API_KEY';
+const API_KEY = '44071791-e24b31a34b7a75e1ae02e9c2e';
 const BASE_URL = 'http://pixabay.com/api/';
 
 export async function fetchImages(query) {
