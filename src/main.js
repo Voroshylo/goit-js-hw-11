@@ -13,7 +13,7 @@ document.querySelector('#search-form').addEventListener('submit', async (event) 
   try {
     const data = await fetchImages(query);
     if (data.hits.length === 0) {
-      showError('Sory, there are no images matching your search query. Please try again!');
+      showError('Sorry, there are no images matching your search query. Please try again!');
     } else {
       renderImages(data.hits);
     }
