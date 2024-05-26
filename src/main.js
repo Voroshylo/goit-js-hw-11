@@ -5,7 +5,8 @@ document.querySelector('#search-form').addEventListener('submit', async (event) 
   event.preventDefault();
   const query = event.target.elements.searchQuery.value.trim();
   if (!query) {
-    ahowErrpr('Please enter a search query');
+    showError('Please enter a search query');
+    return;
   }
   clearGallery();
   showLoader();
