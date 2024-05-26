@@ -9,7 +9,7 @@ document.querySelector('#search-form').addEventListener('submit', async (event) 
     return;
   }
   clearGallery();
-  showLoader();
+  showLoader(document.querySelector('.loader'));
   try {
     const data = await fetchImages(query);
     if (data.hits.length === 0) {
@@ -20,6 +20,6 @@ document.querySelector('#search-form').addEventListener('submit', async (event) 
   } catch (error) {
     showError(error.message);
   } finally {
-    hideLoader();
+    hideLoader(document.querySelector('.loader'));
   }
 });

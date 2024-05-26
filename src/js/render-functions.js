@@ -41,10 +41,10 @@ export function clearGallery() {
   gallery.innerHTML = '';
 }
 
-export function showLoader() {
-  document.querySelector('.loader').classList.remove('hidden');
+export function showLoader(element) {
+  element.classList.remove('hidden');
 }
 
-export function hideLoader() {
-  document.querySelector('.loader').classList.add('hidden');
+export function hideLoader(element) {
+  element.classList.add('hidden');
 }
